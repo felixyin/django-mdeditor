@@ -38,7 +38,9 @@ DEFAULT_CONFIG = {
     'emoji': True,
     'tex': True,
     'flow_chart': True,
-    'sequence': True
+    'sequence': True,
+    'mermaid': True,
+    'vega': True
 }
 
 
@@ -103,6 +105,6 @@ class MDEditorWidget(forms.Textarea):
             },
             js=(
                 "js/jquery.min.js",
-                "js/editormd.min.js",
+                "js/editormd.js",
             ))
     media = property(_get_media)

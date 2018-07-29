@@ -17,6 +17,12 @@
 
 **Note:** For Markdown page rendering issues, backend rendering is recommended. Because `Editor.md` has not been updated for a long time, some bugs and compatibility issues need to be debugged. Of course, front-end students can choose.
 
+## 推荐桌面md编辑器
+    1. 安装atom
+    2. 安装插件：https://shd101wyy.github.io/markdown-preview-enhanced/#/zh-cn/diagrams?id=mermaid
+    3. 新建md文件用atom打开编辑
+    4. 完工后，复制内容到django-mdeditor
+
 ## Features
 
 - Almost Editor.md features 
@@ -195,7 +201,9 @@ MDEDITOR_CONFIGS = {
     'emoji': True,  # whether to open the expression function
     'tex': True,  # whether to open the tex chart function
     'flow_chart': True,  # whether to open the flow chart function
-    'sequence': True  # Whether to open the sequence diagram function
+    'sequence': True,  # Whether to open the sequence diagram function
+    'mermaid': True, # 增加mermaid 绘图，参见文档：https://mermaidjs.github.io
+    'vega': True, # 增加vega 图表，参见文档：https://vega.github.io/vega/examples/
 }
 ```
 
